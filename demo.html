@@ -5,39 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <meta name="robots" content="noindex, nofollow">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-<title>خانه‌ی اشتراک</title>
+<title>آکواریوم اشتراک</title>
 <style>
 :root{
-  --ink:#20140c;
-  --wall:#f6e5cd;
-  --wall-2:#eed8b8;
-  --floor:#c98a4b;
-  --floor-2:#b0733a;
-  --wood:#e8b473;
-  --wood-2:#c98a4b;
-  --wood-3:#a96a33;
-  --cream:#fffaf0;
-  --muted:#8a6f52;
-  --pop:#ff7a45;
+  --ink:#102521;
+  --wall:#e3f1ec;
+  --wall-2:#cbe6dd;
+  --floor:#43938a;
+  --floor-2:#2e7a72;
+  --wood:#9fc0c4;
+  --wood-2:#7fa8ad;
+  --wood-3:#5d8288;
+  --cream:#f6fffb;
+  --muted:#4f7a74;
+  --pop:#ff5e8a;
   --pop-2:#ffb020;
-  --good:#22c98a;
-  --bad:#ff4d6d;
-  --day-1:#8fd6ff;
-  --day-2:#dff3ff;
-  --col:56.25vh;
-  --btn:12.5cqw;
+  --good:#1cbf9e;
+  --bad:#ef4f7f;
+  --day-1:#9be7dd;
+  --day-2:#eafbf7;
+  --col:58vh;
+  --btn:13.2cqw;
   --btn-sm:9cqw;
   --win-top:20cqw;
-  --gloss:inset 0 .7cqw 0 rgba(255,255,255,.9), inset 0 -1.1cqw 0 rgba(32,20,12,.07);
-  --lift:0 1.4cqw 2.6cqw -0.8cqw rgba(32,20,12,.4), 0 3.2cqw 5cqw -2.4cqw rgba(32,20,12,.22);
-  --lift-sm:0 .9cqw 1.8cqw -0.6cqw rgba(32,20,12,.34), 0 1.8cqw 3.2cqw -1.7cqw rgba(32,20,12,.18);
-  --lift-hi:0 1.8cqw 2.8cqw -0.8cqw rgba(32,20,12,.42), 0 3.6cqw 6cqw -2.4cqw rgba(32,20,12,.26);
-  --press:inset 0 .5cqw 0 rgba(255,255,255,.55), 0 .3cqw .8cqw -0.2cqw rgba(32,20,12,.35);
+  --gloss:inset 0 .7cqw 0 rgba(255,255,255,.9), inset 0 -1.1cqw 0 rgba(16,37,33,.07);
+  --lift:0 1.4cqw 2.6cqw -0.8cqw rgba(16,37,33,.4), 0 3.2cqw 5cqw -2.4cqw rgba(16,37,33,.22);
+  --lift-sm:0 .9cqw 1.8cqw -0.6cqw rgba(16,37,33,.34), 0 1.8cqw 3.2cqw -1.7cqw rgba(16,37,33,.18);
+  --lift-hi:0 1.8cqw 2.8cqw -0.8cqw rgba(16,37,33,.42), 0 3.6cqw 6cqw -2.4cqw rgba(16,37,33,.26);
+  --press:inset 0 .5cqw 0 rgba(255,255,255,.55), 0 .3cqw .8cqw -0.2cqw rgba(16,37,33,.35);
 }
 
-@supports (height:1dvh){ :root{--col:56.25dvh} }
+@supports (height:1dvh){ :root{--col:58dvh} }
 
 *{box-sizing:border-box}
 [hidden]{display:none !important}
@@ -46,12 +46,12 @@ html,body{margin:0;padding:0}
 
 body{
   min-height:100%;
-  font-family:Roboto,Vazirmatn,"IRANSans","IRANSansX","B Koodak",Tahoma,"Segoe UI",system-ui,sans-serif;
+  font-family:Vazirmatn,"IRANSans","IRANSansX","B Koodak",Tahoma,"Segoe UI",system-ui,sans-serif;
   color:var(--ink);
   background:linear-gradient(180deg,var(--wall),var(--wall-2)) fixed;
   overflow-x:hidden;
 }
-:root[data-theme="dark"] body{background:linear-gradient(180deg,#3b3358,#282343) fixed}
+:root[data-theme="dark"] body{background:linear-gradient(180deg,#123f42,#082426) fixed}
 
 @media (prefers-reduced-motion: reduce){
   *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
@@ -75,24 +75,24 @@ body{
 }
 .floor::before{
   content:"";position:absolute;inset:0;
-  background:repeating-linear-gradient(90deg,rgba(32,20,12,.16) 0 .5cqw,transparent .5cqw 15cqw);
+  background:repeating-linear-gradient(90deg,rgba(16,37,33,.16) 0 .5cqw,transparent .5cqw 15cqw);
 }
 .floor::after{
   content:"";position:absolute;inset:0;
-  background:repeating-linear-gradient(180deg,transparent 0 6cqw,rgba(32,20,12,.12) 6cqw 6.6cqw);
+  background:repeating-linear-gradient(180deg,transparent 0 6cqw,rgba(16,37,33,.12) 6cqw 6.6cqw);
 }
 .rug{
   position:absolute;bottom:3cqw;left:50%;transform:translateX(-50%);
   width:76cqw;height:16cqw;border-radius:50%;
   background:
     repeating-radial-gradient(circle at 50% 50%,rgba(255,255,255,.22) 0 1.4cqw,transparent 1.4cqw 3cqw),
-    linear-gradient(180deg,#ff9d8a,#e2695a);
+    linear-gradient(180deg,#cfe9e2,#8fc4b8);
   border:.7cqw solid var(--ink);
-  box-shadow:inset 0 -1.6cqw 0 rgba(32,20,12,.16);
+  box-shadow:inset 0 -1.6cqw 0 rgba(16,37,33,.16);
 }
 .baseboard{
   position:absolute;left:50%;transform:translateX(-50%);width:100vw;bottom:26%;height:3.2cqw;
-  background:linear-gradient(180deg,#fff6e6,#e5cba4);
+  background:linear-gradient(180deg,#f2fbf7,#bddcd4);
   border-top:.6cqw solid var(--ink);
 }
 
@@ -100,7 +100,7 @@ body{
   position:absolute;right:4cqw;top:var(--win-top);width:31cqw;height:33cqw;
   border:.9cqw solid var(--ink);border-radius:3cqw;
   background:linear-gradient(180deg,var(--day-1),var(--day-2));
-  box-shadow:inset 0 0 0 1cqw #fff8ec, 0 1cqw 2cqw -0.6cqw rgba(32,20,12,.35);
+  box-shadow:inset 0 0 0 1cqw #f0fcf8, 0 1cqw 2cqw -0.6cqw rgba(16,37,33,.35);
   overflow:hidden;
 }
 .win-stars{position:absolute;inset:0;opacity:0;transition:opacity .6s}
@@ -124,17 +124,17 @@ body{
 .win-cloud::before{width:4.2cqw;height:4.2cqw;top:-2cqw;left:16%}
 .win-cloud::after{width:3cqw;height:3cqw;top:-1.2cqw;right:18%}
 @keyframes drift{from{transform:translateX(-14cqw)}to{transform:translateX(40cqw)}}
-.win-bar{position:absolute;background:#fff8ec;border:.5cqw solid var(--ink)}
+.win-bar{position:absolute;background:#f0fcf8;border:.5cqw solid var(--ink)}
 .win-bar.v{left:50%;top:0;bottom:0;width:1.5cqw;margin-left:-.75cqw}
 .win-bar.h{top:50%;left:0;right:0;height:1.5cqw;margin-top:-.75cqw}
 .win-sill{
   position:absolute;right:2cqw;top:calc(var(--win-top) + 33cqw);width:35cqw;height:2.8cqw;
-  background:linear-gradient(180deg,#fff6e6,#e5cba4);
+  background:linear-gradient(180deg,#f2fbf7,#bddcd4);
   border:.7cqw solid var(--ink);border-radius:1.4cqw;
 }
 .curtain{
   position:absolute;top:calc(var(--win-top) - 1.5cqw);height:34cqw;width:8cqw;
-  background:linear-gradient(90deg,#ffd0a8,#f2a76b);
+  background:linear-gradient(90deg,#e6f4ef,#bfdcd4);
   border:.7cqw solid var(--ink);border-radius:2.4cqw;
 }
 .curtain.l{right:-5cqw;transform:rotate(-2deg)}
@@ -142,8 +142,8 @@ body{
 
 .picture{
   position:absolute;right:6cqw;bottom:30cqw;width:22cqw;height:18cqw;
-  border:.9cqw solid var(--ink);border-radius:2.4cqw;background:#fff8ec;
-  box-shadow:0 1cqw 1.8cqw -0.7cqw rgba(32,20,12,.35), inset 0 .6cqw 0 rgba(255,255,255,.9);
+  border:.9cqw solid var(--ink);border-radius:2.4cqw;background:#f0fcf8;
+  box-shadow:0 1cqw 1.8cqw -0.7cqw rgba(16,37,33,.35), inset 0 .6cqw 0 rgba(255,255,255,.9);
   transform:rotate(2.5deg);overflow:hidden;
 }
 .picture i{position:absolute;display:block}
@@ -156,7 +156,7 @@ body{
   position:absolute;bottom:0;left:50%;transform:translateX(-50%);
   width:13cqw;height:10cqw;border:.7cqw solid var(--ink);
   border-radius:1.2cqw 1.2cqw 2.4cqw 2.4cqw;
-  background:linear-gradient(180deg,#e08a5a,#b9643c);
+  background:linear-gradient(180deg,#a4c1ba,#6f958d);
 }
 .plant .leaf{
   position:absolute;bottom:8cqw;left:50%;width:5cqw;height:13cqw;
@@ -181,7 +181,7 @@ body{
   background:var(--ink);margin-left:-.5cqw;
 }
 :root[data-theme="dark"] .lamp{opacity:1}
-:root[data-theme="dark"] .window{background:linear-gradient(180deg,#0e1338,#232a5c)}
+:root[data-theme="dark"] .window{background:linear-gradient(180deg,#051626,#0e3044)}
 :root[data-theme="dark"] .win-sun{opacity:0}
 :root[data-theme="dark"] .win-moon{opacity:1}
 :root[data-theme="dark"] .win-stars{opacity:1}
@@ -210,7 +210,7 @@ body{
 
 .panel{
   position:relative;
-  background:linear-gradient(180deg,#fffdf7 0%,#fff4e2 55%,#ffedd6 100%);
+  background:linear-gradient(180deg,#fbfffd 0%,#eefaf4 55%,#ddf5ec 100%);
   border:.75cqw solid var(--ink);border-radius:5cqw;
   box-shadow:var(--gloss), var(--lift);
   padding:4.4cqw 4cqw 4cqw;
@@ -223,10 +223,10 @@ body{
 .panel-head{display:flex;align-items:center;gap:2.4cqw;flex-wrap:wrap;font-weight:800;font-size:clamp(16.7px,3.8cqw,21.3px);margin-bottom:3cqw}
 .panel-head .spacer{flex:1 1 auto}
 .badge-n{
-  font-size:clamp(12.8px,2.9cqw,16.2px);font-weight:800;color:#5a3a12;
-  background:linear-gradient(180deg,#ffd98a,#f5ad2e);
+  font-size:clamp(12.8px,2.9cqw,16.2px);font-weight:800;color:#0d3f36;
+  background:linear-gradient(180deg,#b5ecdd,#4cc0a8);
   border:.55cqw solid var(--ink);border-radius:99px;padding:.2cqw 2.4cqw;
-  box-shadow:inset 0 .4cqw 0 rgba(255,255,255,.75), 0 .5cqw 1cqw -0.3cqw rgba(32,20,12,.3);
+  box-shadow:inset 0 .4cqw 0 rgba(255,255,255,.75), 0 .5cqw 1cqw -0.3cqw rgba(16,37,33,.3);
 }
 
 .reveal{opacity:0;transform:translateY(4cqw)}
@@ -239,10 +239,10 @@ body{
   position:relative;flex:1 1 40cqw;min-width:0;
   display:flex;flex-direction:column;justify-content:center;
   height:var(--btn);
-  background:linear-gradient(180deg,#f9d7a8 0%,#eeb571 55%,#dfa055 100%);
+  background:linear-gradient(180deg,#cfe3e6 0%,#a4c3c8 55%,#7b9fa6 100%);
   border:.8cqw solid var(--ink);
   border-radius:99px;
-  box-shadow:inset 0 .9cqw 0 rgba(255,255,255,.7), inset 0 -1.5cqw 0 rgba(32,20,12,.13), var(--lift);
+  box-shadow:inset 0 .9cqw 0 rgba(255,255,255,.7), inset 0 -1.5cqw 0 rgba(16,37,33,.13), var(--lift);
   padding:0 3.4cqw;
   overflow:hidden;
 }
@@ -276,7 +276,7 @@ body{
   font-size:clamp(13.6px,3.1cqw,17.4px);font-weight:800;padding:0 3.2cqw;border-radius:99px;
   white-space:nowrap;
   border:.6cqw solid var(--ink);color:var(--ink);
-  background:linear-gradient(180deg,#fffdf7,#ffeedb);
+  background:linear-gradient(180deg,#fbfffd,#eefbf6);
   box-shadow:var(--gloss), var(--lift-sm);
 }
 .pill .lampdot{width:2.5cqw;height:2.5cqw;border-radius:50%;background:var(--muted);border:.5cqw solid var(--ink);flex:none}
@@ -317,14 +317,14 @@ body{
 
 .table-card{
   position:relative;padding-top:47cqw;margin-bottom:9cqw;
-  filter:drop-shadow(0 2.2cqw 1.6cqw rgba(32,20,12,.28));
+  filter:drop-shadow(0 2.2cqw 1.6cqw rgba(16,37,33,.28));
 }
 .bowl-holder{position:absolute;top:0;left:50%;transform:translateX(-50%);width:56cqw;height:56cqw;z-index:3}
 .bowl{width:100%;height:100%;overflow:visible;display:block}
 .bowl-shadow{
   position:absolute;bottom:1.5cqw;left:50%;transform:translateX(-50%);
   width:44cqw;height:4.4cqw;border-radius:50%;
-  background:rgba(32,20,12,.28);filter:blur(.5cqw);
+  background:rgba(16,37,33,.28);filter:blur(.5cqw);
 }
 
 .wave{animation:waveMove 3.4s ease-in-out infinite}
@@ -404,12 +404,12 @@ body{
   border:.8cqw solid var(--ink);
   border-radius:4cqw 4cqw 2cqw 2cqw;
   background:
-    repeating-linear-gradient(90deg,rgba(32,20,12,.07) 0 1.2cqw,transparent 1.2cqw 9cqw),
-    linear-gradient(180deg,#f3c68d 0%,var(--wood) 30%,var(--wood-2) 100%);
+    repeating-linear-gradient(90deg,rgba(16,37,33,.07) 0 1.2cqw,transparent 1.2cqw 9cqw),
+    linear-gradient(180deg,#cfe0e6 0%,var(--wood) 30%,var(--wood-2) 100%);
   box-shadow:
     inset 0 1.5cqw 0 rgba(255,255,255,.55),
-    inset 0 -3.6cqw 0 rgba(32,20,12,.18),
-    0 1cqw 1.6cqw -0.6cqw rgba(32,20,12,.35);
+    inset 0 -3.6cqw 0 rgba(16,37,33,.18),
+    0 1cqw 1.6cqw -0.6cqw rgba(16,37,33,.35);
 }
 .tabletop::after{
   content:"";position:absolute;inset:1.8cqw 2.4cqw auto 2.4cqw;height:.8cqw;
@@ -419,24 +419,24 @@ body{
 
 .drawer{
   position:relative;z-index:2;margin-top:-1cqw;
-  background:linear-gradient(180deg,#fffdf7,#fff2df);
+  background:linear-gradient(180deg,#fbfffd,#f0fbf6);
   border:.8cqw solid var(--ink);border-top:none;
   border-radius:0 0 4.5cqw 4.5cqw;
   padding:4cqw 3.4cqw 3.6cqw;
-  box-shadow:inset 0 -1.4cqw 0 rgba(32,20,12,.06), 0 1.6cqw 2.6cqw -1cqw rgba(32,20,12,.34);
+  box-shadow:inset 0 -1.4cqw 0 rgba(16,37,33,.06), 0 1.6cqw 2.6cqw -1cqw rgba(16,37,33,.34);
 }
 .plaque{
-  text-align:center;border:.6cqw solid rgba(32,20,12,.22);border-radius:3.6cqw;
+  text-align:center;border:.6cqw solid rgba(16,37,33,.22);border-radius:3.6cqw;
   padding:3cqw 2cqw;margin-bottom:3.4cqw;
-  background:linear-gradient(180deg,#fffdf4,#fdeccd);
-  box-shadow:inset 0 .8cqw 1.6cqw rgba(32,20,12,.07), inset 0 -.6cqw 0 rgba(255,255,255,.7);
+  background:linear-gradient(180deg,#fbfffd,#ddf5ec);
+  box-shadow:inset 0 .8cqw 1.6cqw rgba(16,37,33,.07), inset 0 -.6cqw 0 rgba(255,255,255,.7);
 }
 .plaque .k{font-size:clamp(13.2px,3cqw,16.8px);font-weight:800;color:var(--muted)}
 .plaque .v{font-size:clamp(37px,8.4cqw,47px);font-weight:900;line-height:1.25}
 .plaque .s{font-size:clamp(12.8px,2.9cqw,16.2px);font-weight:700;color:var(--muted)}
 .plaque .meter{
   margin-top:1.8cqw;height:2.4cqw;border-radius:99px;overflow:hidden;
-  border:.5cqw solid var(--ink);background:#e9dcc6;
+  border:.5cqw solid var(--ink);background:#d5ece6;
 }
 .plaque .meter i{
   display:block;height:100%;width:100%;
@@ -450,7 +450,7 @@ body{
 .tiles{display:grid;grid-template-columns:1fr 1fr;gap:2.8cqw}
 .tile{
   border:.65cqw solid var(--ink);border-radius:4cqw;
-  background:linear-gradient(180deg,#fffdf7,#fff0d9);
+  background:linear-gradient(180deg,#fbfffd,#ecfaf4);
   padding:2.6cqw 3.2cqw;
   box-shadow:var(--gloss), var(--lift-sm);
   transition:transform .22s cubic-bezier(.2,.9,.3,1.4),box-shadow .22s;
@@ -473,7 +473,7 @@ body{
   display:inline-flex;align-items:center;justify-content:center;gap:2cqw;
   padding:2.9cqw 4.4cqw;border-radius:99px;cursor:pointer;
   border:.65cqw solid var(--ink);
-  background:linear-gradient(180deg,#fffdf7,#ffeacb);color:var(--ink);
+  background:linear-gradient(180deg,#fbfffd,#eefbf6);color:var(--ink);
   font:inherit;font-size:clamp(14.5px,3.3cqw,18.5px);font-weight:800;text-decoration:none;
   box-shadow:var(--gloss), var(--lift-sm);
   transition:transform .18s cubic-bezier(.2,.9,.3,1.35),box-shadow .18s,filter .18s;
@@ -482,7 +482,7 @@ body{
 .btn:hover{transform:translateY(-.7cqw);box-shadow:var(--gloss), var(--lift-hi);filter:saturate(1.08)}
 .btn:active{transform:translateY(.5cqw) scale(.98);box-shadow:var(--press)}
 .btn svg{width:4.4cqw;height:4.4cqw;stroke:currentColor;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:none}
-.btn.primary{background:linear-gradient(180deg,#ffc79b,#ff7a45 70%,#f2642d)}
+.btn.primary{background:linear-gradient(180deg,#ffc2d3,#ff5e8a 70%,#e6436f)}
 .btn.mint{background:linear-gradient(180deg,#b6f5da,#31c07f 72%,#22a86a)}
 .btn.sky{background:linear-gradient(180deg,#c9e6ff,#4d8dff 72%,#3a76e0)}
 .btn.violet{background:linear-gradient(180deg,#e2d3ff,#a06bff 72%,#8a53ee)}
@@ -501,7 +501,7 @@ body{
 
 .client{
   border:.65cqw solid var(--ink);border-radius:4.4cqw;
-  background:linear-gradient(180deg,#fffdf7,#fff1dc);
+  background:linear-gradient(180deg,#fbfffd,#edfbf6);
   box-shadow:var(--gloss), var(--lift-sm);overflow:hidden;
   opacity:0;animation:popIn .55s cubic-bezier(.2,1.1,.35,1) forwards;
 }
@@ -509,35 +509,35 @@ body{
 .client-head{
   display:flex;align-items:center;gap:2.2cqw;flex-wrap:wrap;
   padding:2.6cqw 3.2cqw;
-  background:linear-gradient(180deg,#ffeccd,#ffd9a8);
+  background:linear-gradient(180deg,#ffeccd,#d7f1e7);
   border-bottom:.6cqw solid var(--ink);
   box-shadow:inset 0 .7cqw 0 rgba(255,255,255,.8);
 }
 .avatar{
   width:8cqw;height:8cqw;flex:none;border-radius:50%;
   border:.6cqw solid var(--ink);
-  background:radial-gradient(circle at 36% 28%,#ffb27a,#ff7a45 55%,#a06bff);
+  background:radial-gradient(circle at 36% 28%,#ffb27a,#ff7a45 55%,#a06bff) hue-rotate(160deg);
   color:#fff;display:grid;place-items:center;font-size:clamp(15px,3.4cqw,19px);font-weight:900;
-  box-shadow:inset 0 .6cqw 0 rgba(255,255,255,.6), 0 .6cqw 1.2cqw -0.4cqw rgba(32,20,12,.4);
-  text-shadow:0 .2cqw .4cqw rgba(32,20,12,.45);
+  box-shadow:inset 0 .6cqw 0 rgba(255,255,255,.6), 0 .6cqw 1.2cqw -0.4cqw rgba(16,37,33,.4);
+  text-shadow:0 .2cqw .4cqw rgba(16,37,33,.45);
 }
 .client-head .mail{font-size:clamp(13.6px,3.1cqw,17.4px);font-weight:800;word-break:break-all;flex:1 1 auto}
 .count-chip{
   font-size:clamp(11.9px,2.7cqw,15.1px);font-weight:800;border:.5cqw solid var(--ink);
   border-radius:99px;padding:.2cqw 2.2cqw;
   background:linear-gradient(180deg,#fff,#ffeccd);
-  box-shadow:inset 0 .4cqw 0 rgba(255,255,255,.9), 0 .4cqw .8cqw -0.3cqw rgba(32,20,12,.25);
+  box-shadow:inset 0 .4cqw 0 rgba(255,255,255,.9), 0 .4cqw .8cqw -0.3cqw rgba(16,37,33,.25);
 }
 .client-body{padding:2.6cqw;display:flex;flex-direction:column;gap:2.2cqw}
 .cfg{
   display:flex;align-items:center;gap:2.4cqw;
   padding:2.4cqw 2.8cqw;border-radius:3.4cqw;
   background:linear-gradient(180deg,#ffffff,#fff6e8);
-  border:.55cqw solid rgba(32,20,12,.16);
-  box-shadow:0 .7cqw 1.4cqw -0.7cqw rgba(32,20,12,.3), inset 0 .6cqw 0 rgba(255,255,255,.9);
+  border:.55cqw solid rgba(16,37,33,.16);
+  box-shadow:0 .7cqw 1.4cqw -0.7cqw rgba(16,37,33,.3), inset 0 .6cqw 0 rgba(255,255,255,.9);
   transition:border-color .2s,transform .2s cubic-bezier(.2,.9,.3,1.3),box-shadow .2s;
 }
-.cfg:hover{border-color:var(--ink);transform:translateY(-.5cqw);box-shadow:0 1.2cqw 2cqw -0.8cqw rgba(32,20,12,.38), inset 0 .6cqw 0 rgba(255,255,255,.9)}
+.cfg:hover{border-color:var(--ink);transform:translateY(-.5cqw);box-shadow:0 1.2cqw 2cqw -0.8cqw rgba(16,37,33,.38), inset 0 .6cqw 0 rgba(255,255,255,.9)}
 .cfg .info{flex:1 1 auto;min-width:0}
 .cfg .nm{font-size:clamp(15px,3.4cqw,19px);font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .cfg .meta{font-size:clamp(12.3px,2.8cqw,15.7px);color:var(--muted);display:flex;align-items:center;gap:2cqw;flex-wrap:wrap}
@@ -547,7 +547,7 @@ body{
   font-size:clamp(11px,2.5cqw,14px);font-weight:900;letter-spacing:.5px;text-transform:uppercase;
   padding:.3cqw 1.9cqw;border-radius:99px;border:.5cqw solid var(--ink);
   background:linear-gradient(180deg,#ffdfa8,#f5ad2e);
-  box-shadow:inset 0 .4cqw 0 rgba(255,255,255,.8), 0 .4cqw .8cqw -0.3cqw rgba(32,20,12,.28);
+  box-shadow:inset 0 .4cqw 0 rgba(255,255,255,.8), 0 .4cqw .8cqw -0.3cqw rgba(16,37,33,.28);
 }
 .chip.vless{background:linear-gradient(180deg,#e0efff,#a9cdf7)}
 .chip.vmess{background:linear-gradient(180deg,#ffe6ef,#ffbdd1)}
@@ -556,8 +556,8 @@ body{
 .chip.hysteria,.chip.hysteria2,.chip.hy2{background:linear-gradient(180deg,#ffeeda,#ffc79b)}
 .chip.tuic,.chip.wireguard,.chip.wg{background:linear-gradient(180deg,#e2fbf8,#a9e9e2)}
 
-.foot{text-align:center;padding:1cqw 0 3cqw;color:#6b4c2e;font-size:clamp(13.2px,3cqw,16.8px)}
-:root[data-theme="dark"] .foot{color:#e8d7bd}
+.foot{text-align:center;padding:1cqw 0 3cqw;color:#33574f;font-size:clamp(13.2px,3cqw,16.8px)}
+:root[data-theme="dark"] .foot{color:#cfe9e2}
 .foot .btn{margin-bottom:1.4cqw}
 
 #confetti{position:fixed;inset:0;z-index:6;pointer-events:none}
@@ -571,7 +571,7 @@ body{
 .toast{
   max-width:90%;
   display:flex;align-items:center;justify-content:center;gap:1.8cqw;
-  background:linear-gradient(180deg,#fffdf7,#ffeacb);color:var(--ink);
+  background:linear-gradient(180deg,#fbfffd,#eefbf6);color:var(--ink);
   font-size:clamp(15px,3.4cqw,19px);font-weight:800;
   border:.7cqw solid var(--ink);border-radius:99px;padding:2.6cqw 5cqw;
   box-shadow:var(--gloss), var(--lift);text-align:center;
@@ -628,9 +628,9 @@ body{
   data-en="true"
   data-on="true"
   data-sub="https://example.com:2096/sub/EXAMPLE-SUB-ID"
-  data-ti="خانه‌ی اشتراک"
+  data-ti="آکواریوم اشتراک"
   data-sup=""
-  data-ann="سرور آمریکا ۲ تا ۳ بامداد برای بروزرسانی کوتاه ری‌استارت می‌شود. ✨">
+  data-ann="نگهداری هفتگی سرور، بامداد فردا انجام میشه و چند دقیقه‌ای قطعی داریم. ✨">
 <script>
 /* demo-only: state previews via query string — demo.html?days=1&on=0&en=0 */
 (function(){
@@ -684,7 +684,7 @@ body{
 
       <header class="sign-row">
         <div class="sign">
-          <h1 data-t="title">خانه‌ی اشتراک</h1>
+          <h1 data-t="title">آکواریوم اشتراک</h1>
         </div>
         <div class="tools">
           <span class="pill unknown" id="onlinePill"><span class="lampdot"></span><span id="onlineText">بررسی…</span></span>
@@ -698,8 +698,8 @@ body{
       </header>
 
       <div class="note bad" id="disBox" hidden>
-        <div class="head"><i class="fa-solid fa-ban speaker"></i> این اشتراک غیرفعال است</div>
-        دسترسی این کانفیگ بسته شده. برای پیگیری با پشتیبانی در تماس باش.
+        <div class="head"><i class="fa-solid fa-ban speaker"></i> اشتراک فعلاً غیرفعاله</div>
+        امکان اتصال این کانفیگ بسته شده؛ برای پیگیری با پشتیبانی در تماس باش.
       </div>
 
       <div class="note" id="annBox" hidden>
@@ -708,8 +708,8 @@ body{
       </div>
 
       <div class="note alarm" id="lowWarn" hidden>
-        <div class="head"><i class="fa-solid fa-fish speaker"></i> آب تنگت کم شده!</div>
-        آب تنگ اشتراکت کم شده و ماهی اشتراکت داره می‌میره! با یه تمدید کوچیک می‌تونی ماهیتو زنده نگه داری.
+        <div class="head"><i class="fa-solid fa-fish speaker"></i> تنگ آب رو به پایینه!!</div>
+        آبِ اشتراکت داره تموم میشه و ماهی از تشنگی می‌افته! با یه شارژ کوچیک دوباره آبِ تازه بریز تا ماهی سر حال بمونه.
         <div class="btns">
           <a class="btn primary wiggle" id="warnSupport" href="#" hidden>
             <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
@@ -744,7 +744,7 @@ body{
               <ellipse id="wave2" class="wave w2" cx="110" cy="45" rx="112" ry="6" fill="#e3faff" opacity=".7"/>
 
               <path d="M14 178 q26 -16 56 -9 q28 -12 58 3 q30 -7 64 9 L220 214 L0 214 Z"
-                    fill="#e8cfa8" stroke="#20140c" stroke-width="4" stroke-linejoin="round"/>
+                    fill="#cfe2e0" stroke="#102521" stroke-width="4" stroke-linejoin="round"/>
               <circle cx="58" cy="182" r="5" fill="#d8b98a"/>
               <circle cx="92" cy="188" r="6" fill="#c9a877"/>
               <circle cx="146" cy="186" r="5.4" fill="#d8b98a"/>
@@ -760,32 +760,32 @@ body{
                   <g class="fish-flip">
                     <g class="fish-bob">
                       <path class="fish-tail" d="M66 105 l-26 -17 v34 z"
-                            fill="#ff7a45" stroke="#20140c" stroke-width="4" stroke-linejoin="round"/>
+                            fill="#ff7a45" stroke="#102521" stroke-width="4" stroke-linejoin="round"/>
                       <path class="fish-fin" d="M84 85 q12 -14 22 -2 q-10 8 -22 2z"
-                            fill="#ff7a45" stroke="#20140c" stroke-width="3.6" stroke-linejoin="round"/>
+                            fill="#ff7a45" stroke="#102521" stroke-width="3.6" stroke-linejoin="round"/>
                       <ellipse class="fish-body" cx="88" cy="105" rx="31" ry="21"
-                               fill="#ff9a3c" stroke="#20140c" stroke-width="4"/>
+                               fill="#ff9a3c" stroke="#102521" stroke-width="4"/>
                       <path d="M74 118 q16 10 34 0 q-16 6 -34 0z" fill="#ffe0b8" opacity=".8"/>
                       <g class="fish-eye-g">
-                        <circle cx="100" cy="98" r="7" fill="#fff" stroke="#20140c" stroke-width="3"/>
-                        <circle class="fish-eye" cx="102" cy="98" r="3.2" fill="#20140c"/>
+                        <circle cx="100" cy="98" r="7" fill="#fff" stroke="#102521" stroke-width="3"/>
+                        <circle class="fish-eye" cx="102" cy="98" r="3.2" fill="#102521"/>
                       </g>
                       <g class="fish-xeye">
                         <path d="M95 93 l10 10 M105 93 l-10 10" fill="none"
-                              stroke="#20140c" stroke-width="3.4" stroke-linecap="round"/>
+                              stroke="#102521" stroke-width="3.4" stroke-linecap="round"/>
                       </g>
                       <path class="fish-mouth" d="M114 110 q7 4 0 8" fill="none"
-                            stroke="#20140c" stroke-width="3.4" stroke-linecap="round"/>
+                            stroke="#102521" stroke-width="3.4" stroke-linecap="round"/>
                       <g class="fish-tears">
-                        <ellipse cx="99" cy="110" rx="3.4" ry="5" fill="#7fd4ff" stroke="#20140c" stroke-width="2.4"/>
+                        <ellipse cx="99" cy="110" rx="3.4" ry="5" fill="#7fd4ff" stroke="#102521" stroke-width="2.4"/>
                       </g>
                       <g class="fish-spark">
                         <path d="M132 66 l3 9 9 3 -9 3 -3 9 -3 -9 -9 -3 9 -3z"
-                              fill="#fff" stroke="#20140c" stroke-width="2.4" stroke-linejoin="round"/>
+                              fill="#fff" stroke="#102521" stroke-width="2.4" stroke-linejoin="round"/>
                       </g>
                       <g class="fish-sweat">
                         <path d="M118 78 q5.5 7.5 5.5 11 a5.5 5.5 0 0 1 -11 0 q0 -3.5 5.5 -11z"
-                              fill="#7fd4ff" stroke="#20140c" stroke-width="2.4" stroke-linejoin="round"/>
+                              fill="#7fd4ff" stroke="#102521" stroke-width="2.4" stroke-linejoin="round"/>
                       </g>
                       <g class="zzz">
                         <text x="126" y="72">z</text>
@@ -801,10 +801,10 @@ body{
               <circle class="bub" cx="112" cy="156" r="2" fill="#fff" opacity=".8" style="animation-delay:1.7s"/>
             </g>
 
-            <circle cx="110" cy="105" r="86" fill="url(#glassG)" stroke="#20140c" stroke-width="5"/>
+            <circle cx="110" cy="105" r="86" fill="url(#glassG)" stroke="#102521" stroke-width="5"/>
             <path d="M56 52 a66 66 0 0 1 32 -24" stroke="#fff" stroke-width="9"
                   fill="none" opacity=".72" stroke-linecap="round"/>
-            <ellipse cx="110" cy="30" rx="28" ry="7.5" fill="#eaf7ff" stroke="#20140c" stroke-width="5"/>
+            <ellipse cx="110" cy="30" rx="28" ry="7.5" fill="#eaf7ff" stroke="#102521" stroke-width="5"/>
           </svg>
 
           <div class="bowl-shadow"></div>
@@ -854,7 +854,7 @@ body{
             </button>
             <button class="btn mint wiggle" type="button" id="qrSub">
               <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3z"/></svg>
-              نمایش QR
+              نمایش کد QR
             </button>
             <a class="btn sky" id="jsonBtn" href="#">
               <svg viewBox="0 0 24 24"><path d="M14 3v5h5"/><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/></svg>
@@ -878,7 +878,7 @@ body{
         </div>
         <div id="clients"></div>
         <noscript>
-          <div class="small" style="margin-bottom:2cqw">جاوااسکریپت غیرفعال است؛ لینک‌ها خام نمایش داده می‌شوند:</div>
+          <div class="small" style="margin-bottom:2cqw">جاوااسکریپت خاموشه؛ لینک‌ها به‌صورت خام اینجا میان:</div>
           <textarea readonly rows="2" class="ltr" style="width:100%;margin-bottom:1.5cqw;font-size:clamp(11.9px,2.7cqw,15.1px);border-radius:2.4cqw;border:.5cqw solid var(--ink);padding:2cqw">vless://11111111-2222-3333-4444-555555555555@us.example.com:443?security=reality&sni=www.cloudflare.com&fp=chrome&pbk=PUBKEYEXAMPLE&sid=ab43cab1bbf1905a&type=tcp&flow=xtls-rprx-vision#TCP-443</textarea>
           <textarea readonly rows="2" class="ltr" style="width:100%;margin-bottom:1.5cqw;font-size:clamp(11.9px,2.7cqw,15.1px);border-radius:2.4cqw;border:.5cqw solid var(--ink);padding:2cqw">vless://11111111-2222-3333-4444-555555555555@us.example.com:2086?security=reality&sni=www.hcaptcha.com&type=xhttp&mode=auto&path=%2Fcyoy3gjont#XHTTP-2086</textarea>
           <textarea readonly rows="2" class="ltr" style="width:100%;margin-bottom:1.5cqw;font-size:clamp(11.9px,2.7cqw,15.1px);border-radius:2.4cqw;border:.5cqw solid var(--ink);padding:2cqw">vmess://eyJhZGQiOiJ1cy5leGFtcGxlLmNvbSIsInBvcnQiOiI0NDMiLCJpZCI6IjExMTExMTExLTIyMjItMzMzMy00NDQ0LTU1NTU1NTU1NTU1NSIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidHlwZSI6Ii5ub25lIiwiaG9zdCI6Ind3dy5leGFtcGxlLmNvbSIsInBhdGgiOiIvIiwidGxzIjoidGxzIn0=#VMess-443</textarea>
@@ -891,7 +891,7 @@ body{
       <footer class="foot reveal">
         <a class="btn primary wiggle" id="footSupport" href="#" hidden>
           <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          ارتباط با پشتیبانی
+          گفتگو با پشتیبانی
         </a>
       </footer>
     </div>
@@ -933,7 +933,7 @@ body{
   var LOW_WATER = 20;
 
   var D = {
-    title: body.dataset.ti || 'خانه‌ی اشتراک',
+    title: body.dataset.ti || 'آکواریوم اشتراک',
     sub: body.dataset.sub || '',
     sup: body.dataset.sup || '',
     ann: body.dataset.ann || '',
@@ -1375,7 +1375,7 @@ body{
     var src = document.querySelectorAll('#cfgSource .cfg-src');
     var host = $('clients');
     if (!src.length) {
-      host.innerHTML = '<div class="small" style="color:var(--muted)">هنوز لینکی برای این اشتراک ساخته نشده</div>';
+      host.innerHTML = '<div class="small" style="color:var(--muted)">برای این اشتراک هنوز هیچ لینکی ساخته نشده</div>';
       $('cfgCount').textContent = '۰';
       return;
     }
@@ -1461,7 +1461,7 @@ body{
         var bQr = document.createElement('button');
         bQr.type = 'button';
         bQr.className = 'iconbtn';
-        bQr.setAttribute('aria-label', 'نمایش QR');
+        bQr.setAttribute('aria-label', 'نمایش کد QR');
         bQr.innerHTML = SVG_QR;
         bQr.addEventListener('click', function () {
           openQr(item.uri, item.parsed.name || item.parsed.label);
@@ -1505,7 +1505,7 @@ body{
     subTxt.textContent = label || '';
     subTxt.hidden = !label;
     var holder = $('qrHolder');
-    holder.innerHTML = '<div class="msg" style="color:#8a6f52">در حال ساخت کد…</div>';
+    holder.innerHTML = '<div class="msg" style="color:#4f7a74">در حال ساخت کد…</div>';
     $('qrModal').hidden = false;
     sound.pop();
 
@@ -1514,14 +1514,14 @@ body{
       try {
         new window.QRCode(holder, {
           text: uri, width: 200, height: 200,
-          colorDark: '#20140c', colorLight: '#ffffff',
+          colorDark: '#102521', colorLight: '#ffffff',
           correctLevel: window.QRCode.CorrectLevel.M
         });
       } catch (e) {
         holder.innerHTML = '<div class="msg">این لینک برای QR خیلی بلنده. از دکمه‌ی کپی استفاده کن.</div>';
       }
     }).catch(function () {
-      holder.innerHTML = '<div class="msg">کتابخانه‌ی QR لود نشد (شاید شبکه محدوده). از دکمه‌ی کپی استفاده کن.</div>';
+      holder.innerHTML = '<div class="msg">کتابخانهٔ QR لود نشد (شبکه محدوده؟)؛ می‌تونی از دکمهٔ کپی استفاده کنی.</div>';
     });
   }
 
