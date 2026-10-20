@@ -60,13 +60,6 @@ bash <(curl -fsSL https://raw.githubusercontent.com/frank0live/goldfish-subscrip
 - **`install.sh`** — one-line installer (see above).
 - `shots/` — screenshots for this README.
 
----
-
-## 🔗 ارتباط / Contact
-
-سوال، سفارش یا پشتیبانی نصب؟ از تلگرام پیام بدهید:
-
-**📬 [@master_supports](https://t.me/master_supports)** — https://t.me/master_supports
 
 ---
 
